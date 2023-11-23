@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+
+    <div class="options">
+      <button id="rockButton" class="option-button">Rock <br />✊</button>
+      <button id="paperButton" class="option-button">Paper 🤚</button>
+      <button id="scissorsButton" class="option-button">Scissors ✌</button>
+    </div>
+
+    <button id="playButton" class="play-button">Play</button>
+
+    <p id="result"></p>
+
+    <table>
+      <tr>
+        <th>Computer</th>
+        <th>
+          <div id="userName" contenteditable="true">User</div>
+          <div id="charCountWarning" class="char-count-warning">
+            Max 10 characters!
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <td id="computerScore">0</td>
+        <td id="userScore">0</td>
+      </tr>
+    </table>
+
+    <button id="resetButton" class="reset-button">Reset score</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

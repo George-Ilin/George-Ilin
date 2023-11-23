@@ -1,0 +1,120 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.option-button {
+  flex: 1;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adăugat transform pentru animație */
+}
+
+.option-button {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.option-button:hover {
+  background-color: #2980b9;
+  transform: scale(0.95);
+}
+
+.option-button:focus {
+  background-color: #2980b9;
+  color: #000;
+}
+
+.option-button.selected {
+  background-color: #2980b9;
+  color: #fff;
+  outline: 2px solid #e74c3c;
+}
+
+.play-button {
+  width: 80px;
+  height: 30px;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #27ae60;
+}
+
+.play-button:active {
+  transform: scale(1.95);
+  transition: 1.5s;
+}
+
+.reset-button {
+  background-color: #e74c3c;
+  color: #fff;
+  width: auto;
+  cursor: pointer;
+}
+
+.reset-button.small-button {
+  padding: 10px 20px;
+}
+
+.reset-button:hover {
+  background-color: #c0392b;
+}
+
+#result {
+  font-size: 20px;
+  margin: 10px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th,
+table td {
+  border: 1px solid #333;
+  padding: 15px;
+}
+
+#userName[contenteditable="true"] {
+  font-weight: bold;
+  border: 1px solid #333;
+  padding: 10px;
+  min-width: 50px;
+  max-width: 150px;
+}
+
+.char-count-warning {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
